@@ -17,6 +17,7 @@ class MyClass1(SingletonWithInheritance):
         self.value = value
 
 
+
 """
 implement singleton pattern with override  __new__ directly method that confirms singleton pattern.
 """
@@ -72,3 +73,8 @@ class MyClass4:
     def __init__(self, value):
         self.value = value
 
+
+a = MyClass4(1)
+b = MyClass4(2)
+print(a.value)
+print(b.value)
